@@ -1,0 +1,4 @@
+[DB]
+DB_HOST = 
+DB_USER = administrator
+DB_PASSWD = ap-northeast-2
