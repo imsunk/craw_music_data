@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "simple": {
+            "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        }
+    },
+ 
+    "handlers": {
+        "file_handler": {
+			"class": "logging.handlers.TimedRotatingFileHandler",
+            "level": "INFO",
+            "when": "D",
+            "formatter": "simple",
+            "filename": "/home/laesunk/song_index/logs/crawl_youtube.log",
+            "encoding": "utf8"
+        }
+    },
+ 
+    "root": {
+        "level": "DEBUG",
+        "handlers": ["file_handler"]
+    }
+}
